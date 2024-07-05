@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(89, 196, 125);
+            font: normal 20pt Arial;
+            color: rgb(238, 204, 142);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de <strong>Multas</strong></h1>
+    <p>Diga a velocidade do seu carro e eu te direi se vc foi multado.</p>
+    <input type="number" name="vel" id="vel">
+    <input type="button" value="Verificar" onclick="veri()">
+    <div id="res">
+
+    </div>
+    <script>
+        function veri() {
+        var velocidade = window.document.querySelector('input#vel')
+        var res = window.document.querySelector('div#res')
+        var vel1 = Number(velocidade.value)
+        res.innerHTML = `Sua velocidade atual é de ${vel1}.`
+        if (vel1 > 80) {
+            res.innerHTML +='<p>Você foi MULTADO.</p>'
+        }
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <style>
+        body {
+            vertical-align: middle;
+
+        }
+        input#botao{
+            font: normal Arial;
+            color: bisque;
+            background-color: rgb(97, 196, 127);
+            
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Onde você mora?</h1>
+    Seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="O que você é!" onclick="morar()" id="botao">
+    <div id="res">
+
+    </div>
+    <script>
+        function morar() {
+            var pas = window.document.querySelector('input#pais').value
+            //var res = window.document.getElementById('div#res')
+            res.innerText = `Seu país é o ${pas}!`
+            if (pas == 'Brasil') {
+            res.innerText += 'Você é Brasileiro!'
+
+           }else {
+            res.innerText += 'Você é estrangeiro!'
+
+           }
+
+
+        }
+     
+
+
+
+
+    </script>
+</body>
+</html>

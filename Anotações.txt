@@ -1,0 +1,41 @@
+JS aula 03:
+Manter a consistencia e praticar.
+JS aula 05: 
+Regras para variaveis-
+-Poder começar com letra,$ ou simbolo
+-Não podem começar com números.
+-É possivel usar letras ou numeros.
+-Não podem conter espaços
+-Não podem ser palavras reservadas
+Dicas:
+-Maiúsculas e minúsculas fazem diferença.
+-Usar nomes referentes ao tema.
+JS Aula 6:
+Conversão de string prar number.
+Number(n)- Para os dois.
+Number.parseInt(n)- Para inteiro.
+Number.parseFloat(n)- Para real.
+Coversão de number para string.
+String(n)
+Formatando Stings
+var s = 'JavaScript'
+'Eu estou aprendendo' + s
+'Eu estou aprendendo ${s}
+Código para colocar cifrão no valor.
+(variavel).toLocaleString('pt-BR', {style: 'currency', currency: '(moeda que querer exemplo:Real BRL, Dolar DOL, Euro EUR)'})
+Para adicionar casa decimal
+(variavel).toFixed(2)
+Para trocar uma coisa pela outra.
+(variavel).toFixed(2).replace('.', ',')
+JS Aula 07:
+Operadores
+Aritmétrico:
+5+2=7
+5-2=3
+5*2=10
+5/2=2.5
+5%2=(resto da divisão)1
+5**2=25
+Ordem de precedência. Mesma da matemática
+Aula 12:
+É possível colocar varias condições dentro da outra.
